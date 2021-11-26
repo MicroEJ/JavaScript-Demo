@@ -1,0 +1,21 @@
+/*
+ * Js
+ *
+ * Copyright 2020-2021 MicroEJ Corp. All rights reserved.
+ * This library is provided in source code for use, modification and test, subject to license terms.
+ * Any modification of the source code will break MicroEJ Corp. warranties on the whole library.
+ */
+var adder_2 = make_adder(2); 
+
+function make_adder(x) {
+	var z = x; 
+	return function(y) { 
+		return x + y + z
+	}
+} 
+
+var adder_3 = make_adder(3); 
+
+print(adder_2(5));
+
+print(adder_3(5));

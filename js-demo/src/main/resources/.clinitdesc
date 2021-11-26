@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+	XML
+	
+	Copyright 2021 MicroEJ Corp. All rights reserved.
+	This library is provided in source code for use, modification and test, subject to license terms.
+	Any modification of the source code will break MicroEJ Corp. warranties on the whole library.
+-->
+<clinit>
+    <type name="com.microej.js.objects.prototype.FunctionPrototype" depends="com.microej.js.objects.prototype.ErrorPrototype"/>
+</clinit>

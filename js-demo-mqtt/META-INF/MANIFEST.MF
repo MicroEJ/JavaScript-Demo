@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Application-Id: jsdemomqtt
+Application-Version: 0.1.0
+Application-PrintableName: js-demo-mqtt
+Application-Description: js-demo-mqtt
+Application-BackgroundServices: com.microej.demo.js.DemoMqtt
+

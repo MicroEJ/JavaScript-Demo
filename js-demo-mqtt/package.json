@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "copy-paho": "cpx node_modules/paho-mqtt/paho-mqtt.js src/main/js",
+    "rename-paho": "renamer --find \"/^paho-mqtt.js$/\" --replace \"10-paho-mqtt.js\" src/main/js/* --force",
+    "move-deps": "npm run copy-paho && npm run rename-paho"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "paho-mqtt": "^1.1.0",
+    "renamer": "^3.0.2"
+  }
+}

@@ -1,0 +1,23 @@
+/*
+ * Js
+ *
+ * Copyright 2020-2021 MicroEJ Corp. All rights reserved.
+ * This library is provided in source code for use, modification and test, subject to license terms.
+ * Any modification of the source code will break MicroEJ Corp. warranties on the whole library.
+ */
+ 
+(function() {
+	function fib(a) {
+		this.a = "toto"
+		if (a == 0 || a == 1) {
+			return a;
+		} else {
+			return fib(a-1) + fib(a-2)
+		}
+	}
+	
+	for (var i = 0; i <= 20; i++) {
+		print(i, fib(i))
+	}
+})()
+

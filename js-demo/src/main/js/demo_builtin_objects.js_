@@ -1,0 +1,202 @@
+/*
+ * Js
+ *
+ * Copyright 2020-2021 MicroEJ Corp. All rights reserved.
+ * This library is provided in source code for use, modification and test, subject to license terms.
+ * Any modification of the source code will break MicroEJ Corp. warranties on the whole library.
+ */
+ 
+print("============")
+print("=== Math ===");
+print("============")
+
+print("Math.abs(-12) = " + Math.abs(-12))
+print("Math.acos(0.5) = " + Math.acos(0.5))
+print("Math.asin(0.5) = " + Math.asin(0.5))
+print("Math.atan(1) = " + Math.atan(0.5))
+print("Math.atan2(2, 2) = " + Math.atan2(2, 2))
+print("Math.ceil(8.7) = " + Math.ceil(8.7))
+print("Math.cos(Math.PI / 6) = " + Math.cos(Math.PI / 6))
+print("Math.exp(6) = " + Math.exp(6))
+print("Math.floor(8.7) = " + Math.floor(8.7))
+print("Math.log(5) = " + Math.log(5))
+print("Math.max(4, 5, 17, 1, 8, 9) = " + Math.max(4, 5, 17, 1, 8, 9))
+print("Math.min(4, 5, 17, 1, 8, 9) = " + Math.min(4, 5, 17, 1, 8, 9))
+print("Math.pow(2, 5) = " + Math.pow(2, 5))
+print("Math.random() = " + Math.random())
+print("Math.round(8.7) = " + Math.round(8.7))
+print("Math.sin(Math.PI / 6) = " + Math.sin(Math.PI / 6))
+print("Math.sqrt(2) = " + Math.sqrt(2))
+print("Math.tan(Math.PI / 3) = " + Math.tan(Math.PI / 3))
+
+print("Math.E = " + Math.E)
+print("Math.LN10 = " + Math.LN10)
+print("Math.LN2 = " + Math.LN2)
+print("Math.LOG2E = " + Math.LOG2E)
+print("Math.LOG10E = " + Math.LOG10E)
+print("Math.PI = " + Math.PI)
+print("Math.SQRT1_2 = " + Math.SQRT1_2)
+print("Math.SQRT2 = " + Math.SQRT2)
+
+print("new Number(12) = " + new Number(12))
+print("Number.MAX_VALUE = " + Number.MAX_VALUE)
+print("Number.MIN_VALUE = " + Number.MIN_VALUE)
+print("Number.NaN = " + Number.NaN)
+print("Number.NEGATIVE_INFINITY = " + Number.NEGATIVE_INFINITY)
+print("Number.POSITIVE_INFINITY = " + Number.POSITIVE_INFINITY)
+
+
+print("=============")
+print("=== Array ===") 
+print("=============")
+
+var a = [1, 2, 3, 4, 5]
+var b = ['Fire', 'Air', 'Water']
+var c = [5, 3, 1, 2, 4]
+
+print("a = " + a)
+print("b = " + b)
+
+print("a.length = " + a.length)
+print("a.concat(b) = " + a.concat(b))
+//print("a.join(' - ') = " + a.join(' - '))
+//print("b.join('') = " + b.join(''))
+print("a.reverse() = " + a.reverse())
+
+// print("a.toLocaleString() = " + a.toLocaleString())
+
+a.forEach(function(v, i, a) { print(v + ', ' + i + ', ' + a) })
+
+print("a.every(function(x) { return x > 0 }) = " + a.every(function(x) { return x > 0 }))
+print("a.every(function(x) { return x == 2 }) = " + a.every(function(x) { return x == 2 }))
+print("a.some(function(x) { return x == 3 }) = " + a.some(function(x) { return x == 3 }))
+print("a.some(function(x) { return x == 6 }) = " + a.some(function(x) { return x == 6 }))
+
+print("a.map(function(x) { return Math.pow(x, 2) }) = " + a.map(function(x) { return Math.pow(x, 2) }))
+
+print("a.filter(function(x) { return x > 2 }) = " + a.filter(function(x) { return x > 2 }))
+
+print("a.slice(2, 4) = " + a.slice(2, 4))
+
+print("a.shift() + ' - ' + a = " + (a.shift() + ' - ' + a))
+
+print("c = " + c)
+print("c.sort() = " + c.sort())
+
+
+print("==============") 
+print("=== Object ===");
+print("==============") 
+
+var o = {a: 12, b: 5, c: 'hello', d: [1, 2, 3]}
+
+print("o = " + o)
+
+print("Object.getPrototypeOf(o) = " + Object.getPrototypeOf(o))
+print("Object.getOwnPropertyNames(o) = " + Object.getOwnPropertyNames(o))
+
+print("Object.keys(o) = " + Object.keys(o))
+
+print("Object.isFrozen(o) = " + Object.isFrozen(o))
+print("Object.getOwnPropertyDescriptor(o, 'c') = " + Object.getOwnPropertyDescriptor(o, 'c'))
+
+print("Object.freeze(o) = " + Object.freeze(o))
+
+print("Object.isFrozen(o) = " + Object.isFrozen(o))
+print("Object.getOwnPropertyDescriptor(o, 'c') = " + Object.getOwnPropertyDescriptor(o, 'c'))
+
+print("Object.defineProperty(o, 'www', {value: 'microej', writable: true}) = " + Object.defineProperty(o, "www", {value: "microej", writable: true}))
+
+print("Object.getOwnPropertyDescriptor(o, 'www') = " + Object.getOwnPropertyDescriptor(o, "www"))
+
+
+print("Object.create({}, {a: {value: 'aaa'}, b: {value: 'bbb'}}) = " + Object.create({}, {a: {value: 'aaa'}, b: {value: 'bbb'}}))
+
+print("o.hasOwnProperty('b') = " + o.hasOwnProperty('b'))
+print("o.hasOwnProperty('zzz') = " + o.hasOwnProperty('zzz'))
+
+
+print("================") 
+print("=== Function ===") 
+print("================") 
+ 
+print("Math.atan2.length = " + Math.atan2.length)
+
+
+print("==============")
+print("=== Global ===")
+print("==============")
+
+print("NaN = " + NaN)
+print("Infinity = " + Infinity)
+print("undefined = " + undefined)
+print("isNaN(NaN) = " + isNaN(NaN))
+print("isNaN(12) = " + isNaN(12))
+print("isFinite(Infinity) = " + isFinite(Infinity))
+print("isFinite(12) = " + isFinite(12))
+print("isFinite(NaN) = " + isFinite(NaN))
+
+print("parseInt('12') = " + parseInt('12'))
+print("parseInt('-124343', 10) = " + parseInt('-124343', 10))
+print("parseInt('0xFF') = " + parseInt('0xFF'))
+print("parseInt(' 0xFF', 16) = " + parseInt(' 0xFF', 16))
+print("parseInt('1111', 2) = " + parseInt('1111', 2))
+
+print("parseFloat('5.5678') = " + parseFloat('5.5678'))
+print("parseFloat('  12.78   ') = " + parseFloat('  12.78   '))
+print("parseFloat('hello') = " + parseFloat('hello'))
+print("parseFloat('12.5hello') = " + parseFloat('12.5hello'))
+
+ 
+print("============")
+print("=== JSON ===")
+print("============")
+ 
+// TODO bug with null
+// print("JSON.parse('null') = " + JSON.parse('null'))
+print("JSON.parse('5') = " + JSON.parse('5'))
+print("JSON.parse('\'salut\'') = " + JSON.parse('\'salut\''))
+print("JSON.parse('[1, 2, 3]') = " + JSON.parse('[1, 2, 3]'))
+print("JSON.parse('{a: 12}') = " + JSON.parse('{a: 12}'))
+print("JSON.parse('{a: 12}').a = " + JSON.parse('{a: 12}').a)
+print("JSON.parse('{a: {b: [5]}}') = " + JSON.parse('{a: {b: [5]}}'))
+print("JSON.parse('{a: {b: [5]}}').a.b[0] = " + JSON.parse('{a: {b: [5]}}').a.b[0])
+
+print("JSON.stringify(12) = " + JSON.stringify(12))
+print("JSON.stringify('salut') = " + JSON.stringify('salut'))
+print("JSON.stringify([1, 2, 3]) = " + JSON.stringify([1, 2, 3]))
+print("JSON.stringify({a: 12}) = " + JSON.stringify({a: 12}))
+print("JSON.stringify({a: {b: [5]}}) = " + JSON.stringify({a: {b: [5]}}))
+print("JSON.stringify([1, 2, null]) = " + JSON.stringify([1, 2, null]))
+ 
+
+print("==============") 
+print("=== String ===") 
+print("==============") 
+ 
+print("new String('salut') = " + new String('salut'))
+print("new String('salut').length = " + new String('salut').length)
+print("'salut'.valueOf() = " + 'salut'.valueOf())
+
+print("'salut'.charAt(3) = " + 'salut'.charAt(3))
+print("'  salut  '.trim() = " + '  salut  '.trim())
+//print("'salut'.charAt(-12) = " + 'salut'.charAt(-12))
+
+print("'salut'.charCodeAt(1) = " + 'salut'.charCodeAt(1))
+print("'salut'.charCodeAt(2) = " + 'salut'.charCodeAt(2))
+
+//print("'salut'.concat(' ça ', 'va ', '?') = " + 'salut'.concat(' ça ', 'va ', '?'))
+
+print("'SALUT'.toLowerCase() = " + 'SALUT'.toLowerCase())
+print("'salut'.toUpperCase() = " + 'salut'.toUpperCase())
+
+print("'bonjour'.substring(2, 5) = " + 'bonjour'.substring(2, 5))
+
+//print("'bonjour'.slice(2, 5) = " + 'bonjour'.slice(2, 5))
+
+print("'bonjour'.indexOf('jour', 2) = " + 'bonjour'.indexOf('jour', 2))
+print("'bonjour'.lastIndexOf('jour', 2) = " + 'bonjour'.lastIndexOf('jour', 2))
+
+print("String.fromCharCode(65, 66, 67) = " + String.fromCharCode(65, 66, 67))
+
+ 

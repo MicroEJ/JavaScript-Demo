@@ -1,0 +1,6 @@
+/bin/
+/com.*
+/src-adpgenerated/
+/node_modules/
+/src/main/js/01-typedarray.js
+/src/main/js/10-paho-mqtt.js
