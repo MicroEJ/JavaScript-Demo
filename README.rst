@@ -1,3 +1,11 @@
+.. ReStructuredText
+.. Copyright 2020-2021 MicroEJ Corp. All rights reserved.
+.. Use of this source code is governed by a BSD-style license that can be found with this software.
+
+.. image:: https://shields.microej.com/endpoint?url=https://repository.microej.com/packages/badges/sdk_5.4.json
+   :alt: sdk_5.4 badge
+   :align: left
+
 ==========
  Overview
 ==========
@@ -8,9 +16,3 @@ This repository contains MicroEJ JavaScript demonstration projects:
 -  `js-demo-mqtt <js-demo-mqtt>`_ demonstrates integration of Paho JS retrieved from npm, interaction with REST services and with hardware
 
 Please refer to the ``README.md`` files of the projects for more information.
-
----
-.. ReStructuredText
-.. Copyright 2020-2021 MicroEJ Corp. All rights reserved.
-.. This library is provided in source code for use, modification and test, subject to license terms.
-.. Any modification of the source code will break MicroEJ Corp. warranties on the whole library.:
